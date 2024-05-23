@@ -1,0 +1,28 @@
+button {
+  background: none;
+  padding: 12px 20px;
+  border-radius: 21px;
+  color: $white-color;
+  border: none;
+  transition: 0.2s;
+}
+
+.icon-button {
+  background: none;
+  padding:0;
+}
+.icon-button:hover{
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.default__button {
+  background: $accent-color;
+}
+
+.default__button-secondary {
+  background: $secondary-color;
+}

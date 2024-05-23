@@ -5,6 +5,8 @@
 }
 
 .cardContainer {
+  display: flex;
+  flex-direction: column;
   padding: 28px;
   border-radius: 20px;
   box-shadow: 0px 0px 30px 0px #00000014;

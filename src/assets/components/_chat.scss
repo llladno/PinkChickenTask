@@ -8,7 +8,24 @@
   justify-content: space-between;
 
   .chat__content {
+    margin-top:50px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    h3 {
+      width: 70%;
+      text-align: center;
+    }
+  }
+
+  .chat__services{
+    position: relative;
+    top: 30px;
+    display: flex;
+    gap: 20px;
   }
 
   .chat_message__container {
