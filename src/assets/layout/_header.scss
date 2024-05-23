@@ -1,0 +1,16 @@
+header{
+  display: flex;
+  justify-content: space-between;
+
+  .headerRightSide {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

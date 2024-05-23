@@ -1,0 +1,14 @@
+main{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 295px 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+
+  height: 100%;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
