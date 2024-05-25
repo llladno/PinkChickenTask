@@ -1,13 +1,29 @@
 main{
+  margin: 0 auto 60px auto;
   display: grid;
   justify-content: space-between;
   grid-template-columns: 295px 1fr;
   grid-template-rows: auto;
   gap: 30px;
-
+  width: 100%;
+  max-width: 1300px;
   height: 100%;
 
+  h2{
+    font-size: 24px;
+  }
+  b, p{
+    font-size: 15px;
+  }
+
   @media (max-width: 768px) {
+    &{
+      height: auto;
+      width: auto;
+      margin: 0 40px;
+
+
+    }
     grid-template-columns: 1fr;
   }
 }

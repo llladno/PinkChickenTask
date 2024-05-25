@@ -1,10 +1,12 @@
 <script setup lang="ts">
-
 import AddFileIcon from '@/components/icon/AddFileIcon.vue'
 import SendImgIcon from '@/components/icon/SendImgIcon.vue'
 import SendMessageIcon from '@/components/icon/SendMessageIcon.vue'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import PCButton from '@/components/common/PCButton.vue'
+
+
+defineEmits( ['test'])
 
 onMounted(() => {
   let textArea = document.querySelector('textarea') as HTMLTextAreaElement
@@ -15,11 +17,18 @@ onMounted(() => {
   })
 })
 
+let test = ref('')
+
+function setValue(e){
+  test.value = e.target.value
+}
+
+
 </script>
 
 <template>
   <div class="chat_message__container">
-    <textarea class="chat__message__area" placeholder="Напишите сообщение помошнику" maxlength="250" />
+    <textarea class="chat__message__area" placeholder="Напишите сообщение помошнику" maxlength="250" @change="setValue"/>
     <div class="chat__message__footer">
       <div class="chat_message__footer-left">
         <PCButton class-prop="icon-button">
@@ -29,7 +38,7 @@ onMounted(() => {
           <SendImgIcon />
         </PCButton>
       </div>
-      <SendMessageIcon />
+      <SendMessageIcon @click="$emit('test', test)" />
     </div>
   </div>
 </template>

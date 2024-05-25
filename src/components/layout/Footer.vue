@@ -9,16 +9,24 @@ import WhatsAppIcon from '@/components/icon/WhatsAppIcon.vue'
 
 <template>
   <footer>
-    <GreyLogoIcon />
-    <p>Политика конфиденциальности</p>
-    <SmsIcon />
-    <p>pinkchicken@adaurum.ru</p>
-    <GlobalIcon />
-    <p>RU</p>
-    <p>EN</p>
-    <p>TUR</p>
-    <TelegramIcon />
-    <WhatsAppIcon />
+    <div class="footer__container">
+      <GreyLogoIcon class="grey__logo-icon"/>
+      <p class="footer__container__policy">Политика конфиденциальности</p>
+      <div class="footer__container__contact">
+        <SmsIcon />
+        <p>pinkchicken@adaurum.ru</p>
+      </div>
+      <div class="footer__container__lang">
+        <GlobalIcon />
+        <p class="footer__container__lang-selected">RU</p>
+        <p>EN</p>
+        <p>TUR</p>
+      </div>
+      <div class="footer__container__social">
+        <TelegramIcon />
+        <WhatsAppIcon />
+      </div>
+    </div>
   </footer>
 </template>
 

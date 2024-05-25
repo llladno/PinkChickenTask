@@ -1,12 +1,20 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
+export const useFilesStore = defineStore('files', () => {
+  const files = ref({
+    media: [],
+    report: []
+  })
+
+  function setMedia() {
+    files.value.media = [...files.value.media, { name: 'test', date: new Date().toLocaleDateString(), status: (Math.random() > 0.5) }]
   }
 
-  return { count, doubleCount, increment }
+  function setReport() {
+    files.value.report = [...files.value.report, { name: 'test', date: new Date().toLocaleDateString(), status: (Math.random() > 0.5) }]
+
+  }
+
+  return { files, setMedia, setReport }
 })

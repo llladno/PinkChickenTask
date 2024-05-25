@@ -10,14 +10,16 @@ import '@/assets/layout/_header.scss';
 
 <template>
   <header class="defaultContainer">
-    <LogoIcon></LogoIcon>
-    <div class="headerRightSide">
-      <FileProcentIcon></FileProcentIcon>
-      <span>5%</span>
-      <UserLogoIcon></UserLogoIcon>
-      <span>Вася Пупкин</span>
-      <SettingsIcon></SettingsIcon>
-      <ExitIcon></ExitIcon>
+    <LogoIcon class="header__logo"/>
+    <div class="header__right">
+      <FileProcentIcon class="header__right__procent"/>
+      <span class="header__right__procent__text">5%</span>
+      <UserLogoIcon class="header__right__user" />
+      <span class="header__right__user__mail">Username@adaurum.ru</span>
+      <div class="header__right__buttons">
+        <SettingsIcon />
+        <ExitIcon />
+      </div>
     </div>
   </header>
 </template>

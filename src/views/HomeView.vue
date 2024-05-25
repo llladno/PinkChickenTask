@@ -4,7 +4,7 @@ import Assistant from '@/components/layout/Assistant.vue'
 </script>
 
 <template>
-  <main class="defaultContainer">
+  <main>
     <Files></Files>
     <Assistant></Assistant>
   </main>
