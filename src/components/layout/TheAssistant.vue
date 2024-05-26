@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Chat from '@/components/layout/Chat.vue'
+import Chat from '@/components/layout/ChatForm.vue'
 </script>
 
 <template>
@@ -9,9 +9,9 @@ import Chat from '@/components/layout/Chat.vue'
         <h2>Личный помощник</h2>
         <div class="assistant__info">
           <b>Jim Davidson</b>
-          <p>Jim Davidson@adaurum.ru</p>
+          <p class="header__assistant__mail">Jim Davidson@adaurum.ru</p>
           <div class="header__dropdown">
-            <div class="header__dropdown__button-helper">
+            <div class="header__dropdown__button-helper icon-button">
               <div class="header__dropdown__circle"></div>
               <div class="header__dropdown__circle"></div>
               <div class="header__dropdown__circle"></div>
@@ -26,5 +26,4 @@ import Chat from '@/components/layout/Chat.vue'
       <Chat></Chat>
     </div>
   </div>
-
 </template>

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import GreyLogoIcon from '@/components/icon/GreyLogoIcon.vue'
 import SmsIcon from '@/components/icon/SmsIcon.vue'
 import GlobalIcon from '@/components/icon/GlobalIcon.vue'
@@ -10,7 +9,7 @@ import WhatsAppIcon from '@/components/icon/WhatsAppIcon.vue'
 <template>
   <footer>
     <div class="footer__container">
-      <GreyLogoIcon class="grey__logo-icon"/>
+      <GreyLogoIcon class="grey__logo-icon" />
       <p class="footer__container__policy">Политика конфиденциальности</p>
       <div class="footer__container__contact">
         <SmsIcon />
@@ -30,6 +29,4 @@ import WhatsAppIcon from '@/components/icon/WhatsAppIcon.vue'
   </footer>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

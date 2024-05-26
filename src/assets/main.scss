@@ -1,15 +1,14 @@
-@import "./base/variables";
-@import "./base/reset";
+@import './base/variables';
+@import './base/reset';
 
-@import "./components/containers";
+@import './components/containers';
 @import './components/chat';
-@import "./components/button";
+@import './components/button';
 
-@import "layout/header";
-@import "layout/footer";
-@import "layout/main";
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
 
-
-@import "blocks/mainpage";
-@import "blocks/assistant";
-@import "blocks/files";
+@import 'blocks/mainpage';
+@import 'blocks/assistant';
+@import 'blocks/files';

@@ -1,4 +1,4 @@
-main{
+main {
   margin: 0 auto 60px auto;
   display: grid;
   justify-content: space-between;
@@ -9,22 +9,24 @@ main{
   max-width: 1300px;
   height: 100%;
 
-  h2{
-    font-size: 24px;
-  }
-  b, p{
+  b,
+  p {
     font-size: 15px;
   }
 
-  @media (max-width: 768px) {
-    &{
+  @media (max-width: 950px) {
+    & {
       height: auto;
       width: auto;
       margin: 0 40px;
-
-
     }
     grid-template-columns: 1fr;
   }
-}
 
+  @media (max-width: 630px) {
+    & {
+      margin: 0;
+      gap: 0;
+    }
+  }
+}

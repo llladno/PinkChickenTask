@@ -1,4 +1,4 @@
-.defaultContainer{
+.defaultContainer {
   margin: 37px auto;
   max-width: 1300px;
   width: 100%;
@@ -9,4 +9,27 @@
   border-radius: 20px;
   box-shadow: 0px 0px 30px 0px #00000014;
   background: white;
+
+  @media (max-width: 630px) {
+    & {
+      border-radius: 0;
+      box-shadow: none;
+      background: #ebebeb;
+      padding: 0;
+    }
+  }
+}
+
+.files__card {
+  @media (max-width: 950px) {
+    & {
+      height: 405px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    & {
+      display: none;
+    }
+  }
 }

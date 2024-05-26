@@ -9,9 +9,10 @@ button {
 
 .icon-button {
   background: none;
-  padding:0;
+  padding: 0;
+  transition: 0.2s;
 }
-.icon-button:hover{
+.icon-button:hover {
   opacity: 0.6;
 }
 

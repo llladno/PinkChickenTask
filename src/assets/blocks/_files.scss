@@ -9,6 +9,18 @@
     font-weight: 500;
     text-align: center;
   }
+
+  @media (max-width: 950px) {
+    & {
+      flex-direction: row;
+      margin: 0 40px 0 60px;
+      gap: 0;
+
+      p {
+        text-align: left;
+      }
+    }
+  }
 }
 
 .files__show {
@@ -20,7 +32,7 @@
   align-items: center;
   gap: 8px;
   animation: fadeIn 0.5s;
-  max-height: 400px;
+  max-height: 230px;
 
   overflow-y: auto;
 }
@@ -54,10 +66,10 @@
   display: flex;
   width: 100%;
   background: $background-color;
+  padding-left: 9px;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .files__status {
   margin-top: 8px;
@@ -66,34 +78,97 @@
 
   p {
     font-size: 12px;
-
+    color: $light-grey-text-color;
   }
 }
-
 
 .files__container {
   display: flex;
   flex-direction: column;
   height: 100%;
 
-
   .files__media__container {
     display: block;
-    height: 40%;
-    max-height:  40%;;
+    height: 49%;
+    max-height: 49%;
     overflow: hidden;
     flex-shrink: 1; /* предотвращает сжатие элемента */
-
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     & {
       flex-direction: row;
       justify-content: space-between;
       gap: 20px;
 
       & > div {
+        max-height: none !important;
+        height: 100% !important;
         width: 100%;
+      }
+    }
+  }
+}
+
+.files__dropdown {
+  display: none;
+
+  @media (max-width: 630px) {
+    & {
+      position: relative;
+      display: flex;
+      background: $white-color;
+      gap: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .files__dropdown__button {
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        padding: 12px;
+        font-weight: 600;
+      }
+
+      .files__dropdown__button-secondary {
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        padding: 12px;
+        font-weight: 600;
+      }
+
+      .files__dropdown__content {
+        display: none;
+        position: absolute;
+        max-height: 400px;
+        overflow-y: auto;
+        background-color: $white-color;
+        min-width: 332px;
+        box-shadow: 0px 0px 30px 0px #00000014;
+        z-index: 1;
+        border-radius: 8px;
+
+        a {
+          color: black;
+          text-decoration: none;
+          display: block;
+          transition: 0.2s;
+        }
+
+        a:hover {
+          color: $accent-color;
+          text-decoration: none;
+          display: block;
+        }
+      }
+    }
+
+    .files__dropdown__media:hover,
+    .files__dropdown__report:hover {
+      .files__dropdown__content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 30px;
       }
     }
   }

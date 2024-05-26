@@ -8,11 +8,17 @@
   justify-content: space-between;
 
   .chat__content {
-    padding: 50px 20px 0 20px;
+    padding: 30px 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 950px) {
+      & {
+        min-height: 320px;
+      }
+    }
 
     h3 {
       width: 70%;
@@ -20,7 +26,7 @@
     }
   }
 
-  .chat__services{
+  .chat__services {
     position: relative;
     top: 30px;
     padding-left: 20px;
@@ -31,19 +37,29 @@
   .chat_message__container {
     width: 100%;
 
+    .chat__messages__footer__button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+
+      p {
+        font-size: 10px;
+      }
+    }
 
     .chat__message__footer {
       position: relative;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: self-end;
       top: -20px;
       padding: 0 20px;
       z-index: 2;
 
       .chat_message__footer-left {
         display: flex;
-        gap: 20px
+        gap: 20px;
       }
     }
   }
@@ -52,12 +68,12 @@
     resize: none;
     vertical-align: top;
     position: relative;
-    bottom: -50px;
+    bottom: -65px;
     width: 100%;
     border: none;
+
     &:focus {
       outline: 2px solid $accent-color;
-
     }
 
     height: 144px;
@@ -65,28 +81,67 @@
     border-radius: 20px;
     padding: 20px;
   }
+
+  @media (max-width: 630px) {
+    & {
+      padding: 30px 20px 37px 20px;
+
+      .chat__services {
+        position: relative;
+        top: 30px;
+        padding-left: 20px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+      }
+
+      .chat__message__footer {
+        top: -10px !important;
+      }
+    }
+  }
 }
 
-.chat__messages{
+.chat__messages {
   display: flex;
   flex-direction: column;
-  max-height: 330px;
+  max-height: 320px;
   gap: 11px;
   padding: 46px 26px 0 26px;
   overflow-y: auto;
-  h4{
+
+  .chat__messages__title {
+    text-align: center;
+    font-weight: 400;
+    color: $light-grey-text-color;
+  }
+
+  @media (max-width: 950px) {
+    & {
+      min-height: 320px
+    }
+  }
+
+  @media (max-width: 630px) {
+    & {
+      min-height: 320px;
+    }
+  }
+
+  h4 {
     text-align: center;
   }
 }
 
-.chat__messages__message{
+.chat__messages__message {
   width: fit-content;
   background: $white-color;
   padding: 16px 22px;
   border-radius: 12px;
 }
 
-.chat__messages__message-user{
+.chat__messages__message-user {
   float: right;
   display: flex;
   gap: 8px;
@@ -94,7 +149,7 @@
   align-items: flex-end;
 }
 
-.chat__messages__message-assistant{
+.chat__messages__message-assistant {
   max-width: 70%;
   display: flex;
   gap: 8px;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Files from '@/components/layout/Files.vue'
-import Assistant from '@/components/layout/Assistant.vue'
+import Files from '@/components/layout/TheFiles.vue'
+import Assistant from '@/components/layout/TheAssistant.vue'
 </script>
 
 <template>
