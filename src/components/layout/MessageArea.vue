@@ -49,5 +49,3 @@ function setValue(e) {
     </div>
   </div>
 </template>
-
-<style scoped></style>

@@ -28,5 +28,3 @@ import WhatsAppIcon from '@/components/icon/WhatsAppIcon.vue'
     </div>
   </footer>
 </template>
-
-<style scoped></style>

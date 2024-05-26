@@ -24,5 +24,3 @@ import '@/assets/layout/_header.scss'
     </div>
   </header>
 </template>
-
-<style scoped></style>
