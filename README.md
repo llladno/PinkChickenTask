@@ -1,39 +1,83 @@
-# .
+# PinkChickenTask
 
-This template should help get you started developing with Vue 3 in Vite.
+Это тестовое задание PinkChicken. Ниже вы найдете инструкции по настройке и запуску проекта, а также
+краткое описание структуры проекта и используемых технологий.
 
-## Recommended IDE Setup
+## Содержание
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Начало работы](#начало-работы)
+    - [Предварительные требования](#предварительные-требования)
+    - [Установка](#установка)
+    - [Запуск проекта](#запуск-проекта)
+- [Структура проекта](#структура-проекта)
+- [Используемые технологии](#используемые-технологии)
 
-## Type Support for `.vue` Imports in TS
+## Начало работы
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Предварительные требования
 
-## Customize configuration
+Перед началом убедитесь, что у вас установлены следующие программы:
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm) или [yarn](https://yarnpkg.com/getting-started/install)
 
-## Project Setup
+### Установка
 
-```sh
+1. Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/your-username/PinkChickenTask.git
+```
+
+2. Перейдите в директорию проекта:
+
+```bash
+cd PinkChickenTask
+```
+
+3. Установите зависимости:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
+### Запуск проекта
+```bash
+npm run dev 
+```
+Это запустит проект по адресу [http://localhost:5174/](http://localhost:5174/)
+### Структура проекта
+```
+src/
+├── api/
+│   └── testapi.ts        # Определения вызовов API
+├── assets/
+│   ├── base/             # Базовые стили
+│   ├── blocks/           # Стили блоков
+│   ├── components/       # Стили компонентов
+│   ├── img/              # Изображения
+│   ├── layout/           # Стили компоновки
+│   └── main.scss         # Основной файл стилей
+├── components/
+│   ├── common/           # Общие компоненты
+│   ├── icon/             # Иконки
+│   └── layout/           # Компоненты компоновки
+├── router/
+│   └── index.ts          # Конфигурация Vue Router
+├── stores/
+│   └── store.ts          # Конфигурация Pinia
+├── types/
+│   └── types.ts          # Определения типов TypeScript
+├── views/
+│   └── HomeView.vue      # Главный компонент представления
+├── App.vue               # Корневой компонент
+└── main.ts               # Точка входа приложения
 ```
 
-### Type-Check, Compile and Minify for Production
+## Используемые технологии
+* Vue 3: Прогрессивный JavaScript-фреймворк.
+* TypeScript: Типизированное надмножество JavaScript, которое компилируется в чистый JavaScript.
+* Pinia: Шаблон управления состоянием + библиотека для приложений на Vue.
+* SCSS: CSS-препроцессор, который добавляет мощность и элегантность в базовый язык.
 
-```sh
-npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
