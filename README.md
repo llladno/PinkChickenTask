@@ -26,7 +26,7 @@
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/your-username/PinkChickenTask.git
+git clone https://github.com/llladno/PinkChickenTask.git
 ```
 
 2. Перейдите в директорию проекта:
