@@ -45,7 +45,7 @@ npm install
 ```bash
 npm run dev 
 ```
-Это запустит проект по адресу [http://localhost:5174/](http://localhost:5174/)
+Это запустит проект по адресу [http://localhost:5173/ (по умолчанию)](http://localhost:5173/)
 ### Структура проекта
 ```
 src/
